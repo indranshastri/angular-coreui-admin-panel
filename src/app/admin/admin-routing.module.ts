@@ -17,6 +17,10 @@ const routes: Routes = [
   {
     path: 'access/permission',
     loadChildren: './access/permission/permission.module#PermissionModule'
+  },
+  {
+    path: 'faqs',
+    loadChildren: './faqs/faqs.module#FaqsModule'
   }
 ];
 

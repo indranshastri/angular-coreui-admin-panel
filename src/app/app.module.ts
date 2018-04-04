@@ -1,9 +1,9 @@
 import { BrowserModule }        from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { 
-  NgModule, 
+import {
+  NgModule,
   APP_INITIALIZER }             from '@angular/core';
-import { 
+import {
   HttpModule,
   RequestOptions,
   XHRBackend,
@@ -28,9 +28,9 @@ import {
   TranslateLoader,
   TranslateStaticLoader
 }                               from 'ng2-translate';
-import { 
-  StoreModule, 
-  ActionReducerMap 
+import {
+  StoreModule,
+  ActionReducerMap
 }                               from '@ngrx/store';
 import { EffectsModule }        from '@ngrx/effects';
 import { StoreDevtoolsModule }  from '@ngrx/store-devtools';
@@ -52,8 +52,8 @@ import { PermissionApiClient } from './admin/access/permission/services/permissi
 
 /**
  * Function for loading application config
- * 
- * @param config 
+ *
+ * @param config
  */
 export function configServiceFactory (config: ConfigService) {
   return () => config.load()
@@ -90,7 +90,7 @@ export function configServiceFactory (config: ConfigService) {
     {
       provide: APP_INITIALIZER,
       useFactory: configServiceFactory,
-      deps: [ConfigService], 
+      deps: [ConfigService],
       multi: true
     },
     AuthGuard,

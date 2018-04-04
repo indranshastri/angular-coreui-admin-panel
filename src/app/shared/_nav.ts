@@ -79,7 +79,7 @@ export const navigation = [
   },
   {
     name: 'FAQ Management',
-    url: '/admin/faq',
+    url: '/admin/faqs',
     icon: 'icon-question'
   },
 ];
